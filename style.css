@@ -1,112 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&family=Poppins:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&family=Poppins:ital@1&display=swap");
 
 .attribution {
-    font-size: 11px; 
-    text-align: center; 
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
-body{
-    font-size: 18px;
-}
-
-.top-header{
-    background-image: url('./images/bg-hero-desktop.svg');
-    
+body {
+  font-size: 18px;
 }
 
-.top-menu{
-    display: flex;
-    justify-content: space-between;
+.top-header {
+  background-image: url("./images/bg-hero-desktop.svg");
 }
 
-.try-button{
-    width: 150px;
-    border-radius: 20px;
-    height: 25px;
-    border-color: white;
-    background-color: white;
-    margin-top: 30px;
+.top-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo-image{
-    width: 150px;
-    height: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+.try-button {
+  width: 150px;
+  border-radius: 20px;
+  height: 25px;
+  border-color: white;
+  background-color: white;
+  margin-top: 30px;
 }
 
-.header-content{
-    display: flex;
-    /* height: 300px; */
-    margin-top: 30px;
-    
-
+.logo-image {
+  width: 150px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
-.header-image{
-    width: 800px;
-    height: 400px;
-    object-fit: contain;
-    margin-left: 50px;
+.header-content {
+  display: flex;
+  /* height: 300px; */
+  margin-top: 30px;
 }
 
-.header-message{
-    /* width: 440px; */
-    margin-left: 20px;
-    margin-top: 30px;
+.header-image {
+  width: 800px;
+  height: 400px;
+  object-fit: contain;
+  margin-left: 50px;
 }
 
-p, a, button{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+.header-message {
+  /* width: 440px; */
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
-h1, h2{
-    font-family: 'Poppins', sans-serif;
+p,
+a,
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
-.start-button{
-    background-color: hsl(322, 100%, 66%);
-    border: none;
-    border-radius: 20px;
-    width: 250px;
-    height: 50px;
-    color: white;
-    margin-top: 30px;
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
-.card{
-    background-color: white;
-    width: 80%;
-    height: 400px;
-    margin: auto;
-    margin-top: 30px;
-    border: 1px solid white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+.start-button {
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  margin-top: 30px;
 }
 
-.section-one, .section-two, .section-three{
-    display: flex;
-    justify-content: space-between
+.card {
+  background-color: white;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.image-section{
-    width: 52%;
-    height: 300px;
-    margin-top: 30px;
-    object-fit: contain;
+.section-one,
+.section-two,
+.section-three {
+  display: flex;
+  justify-content: space-between;
 }
 
-.text-section{
-    width: 48%;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+.image-section {
+  width: 52%;
+  height: 300px;
+  margin-top: 30px;
+  object-fit: contain;
 }
 
-.paragraph{
-    font-weight: lighter;
-    color: hsl(208, 11%, 55%);
+.text-section {
+  width: 48%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.paragraph {
+  font-weight: lighter;
+  color: hsl(208, 11%, 55%);
+}
+
+.before-footer {
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  /* z-index: 9; */
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  top: 50px;
+  border-radius: 15px;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+}
+
+.footer-button {
+  margin-top: 4px;
+}
+
+.footer-section {
+  display: flex;
+}
+
+i {
+  width: 40px;
+  height: 40px;
 }

@@ -139,7 +139,7 @@ footer {
 .footer-section {
   display: flex;
   justify-content: space-around;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-left: 50px;
 }
 
@@ -194,4 +194,116 @@ a{
     margin: 10px;
     cursor: pointer;
     filter: brightness(0) invert(1);
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo-image {
+    width: 100px;
+    height: 15px;
+    margin-top: 20px;
+    margin-left: 5px;
+    object-fit: contain;
+  }
+
+  .try-button {
+    width: 100px;
+    border-radius: 20px;
+    height: 20px;
+    border-color: white;
+    background-color: white;
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  .header-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-message {
+    text-align: center;
+    width: 90vw;
+  }
+  
+  .header-image{
+    width: 90vw;
+    margin-left: 0px;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three{
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .section-one, .section-three{
+    flex-direction: column-reverse;
+
+  }
+
+  .card{
+    height: 100%;
+    width: 92vw;
+  }
+
+  .image-section{
+    width: 92vw;
+    height: 500px;
+    margin-top: 2px;
+  }
+
+  .text-section {
+    width: 90vw;
+    margin-top: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+  }
+
+  .before-footer {
+    width: 90vw;
+    height: 200px;
+    margin: auto;
+    /* z-index: 9; */
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    top: 70px;
+    border-radius: 15px;
+  }
+  footer{
+    min-height: 100%;
+  }
+  .before-footer h3{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .footer-button {
+    margin-top: 20px;
+  }
+
+  .footer-section{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+
+  .footer-logo{
+    width: 50px;
+    height: 10px;
+  }
+
+  .copyright-text{
+    text-align: center;
+  }
+
+  .footer-section-one, .footer-section-two, .footer-section-three, .footer-section-four{
+    width: 100vw;
+  }
 }

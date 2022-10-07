@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&family=Poppins:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap');
 
 .attribution {
   font-size: 11px;
@@ -9,37 +9,44 @@
 }
 body {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  /* letter-spacing: 1px; */
 }
 
 .top-header {
   background-image: url("./images/bg-hero-desktop.svg");
+  background-color: hsl(193, 100%, 96%);
+  margin-bottom: 140px;
 }
 
 .top-menu {
   display: flex;
   justify-content: space-between;
+  padding: 30px;
 }
 
 .try-button {
   width: 150px;
-  border-radius: 20px;
-  height: 25px;
-  border-color: white;
+  border-radius: 30px;
+  height: 40px;
+  border-color: transparent;
   background-color: white;
-  margin-top: 30px;
+  font-weight: 700;
 }
 
 .logo-image {
   width: 150px;
   height: 20px;
-  margin-top: 30px;
-  margin-left: 20px;
 }
 
 .header-content {
   display: flex;
   /* height: 300px; */
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 50px;
 }
 
 .header-image {
@@ -53,28 +60,31 @@ body {
   /* width: 440px; */
   margin-left: 20px;
   margin-top: 30px;
+  
 }
 
 p,
-a,
-button {
+a {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  
 }
 
 h1,
-h2 {
+h2, h3, button {
   font-family: "Poppins", sans-serif;
+
 }
 
 .start-button {
   background-color: hsl(322, 100%, 66%);
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 250px;
   height: 50px;
   color: white;
-  margin-top: 30px;
+  
+  /* margin-top: 30px; */
 }
 
 .card {
@@ -84,6 +94,7 @@ h2 {
   margin: auto;
   margin-top: 30px;
   border: 1px solid white;
+  border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
@@ -95,37 +106,51 @@ h2 {
 }
 
 .image-section {
-  width: 52%;
+  width: 49%;
   height: 300px;
   margin-top: 30px;
   object-fit: contain;
 }
 
 .text-section {
-  width: 48%;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 51%;
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+.text-section h2{
+  margin-top: 120px;
 }
 
 .paragraph {
-  font-weight: lighter;
-  color: hsl(208, 11%, 55%);
+  color: black
 }
 
+.paragraph-card{
+  color: hsl(228, 12%, 48%);
+}
+
+
 .before-footer {
-  width: 50%;
-  height: 150px;
+  width: 65%;
+  height: 250px;
   margin: auto;
   /* z-index: 9; */
   text-align: center;
   position: relative;
-  margin-top: 70px;
+  margin-top: 100px;
   background-color: white;
   border: 1px solid white;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  top: 50px;
+  top: 100px;
   border-radius: 15px;
+}
+
+h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 10px;
 }
 
 footer {
@@ -134,6 +159,14 @@ footer {
 
 .footer-button {
   margin-top: 4px;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 30px;
+  width: 370px;
+  height: 70px;
+  color: white;
+  font-size: 1.2rem;
+
 }
 
 .footer-section {
@@ -146,6 +179,7 @@ footer {
 .footer-logo{
   width: 100px;
   height: 18px;
+  margin-top: 40px;
   filter: brightness(0) invert(1);
 }
 
@@ -155,7 +189,7 @@ footer {
 }
 
 .copyright-text{
-  text-align: end;
+  /* text-align: end; */
   color: hsl(208, 11%, 55%);
 }
 
@@ -181,15 +215,27 @@ a{
 .footer-section-two, .footer-section-three{
   display: grid;
   width: 20vw;
-  margin-top: 85px;
+  /* margin-top: 125px; */
 }
+
+.footer-section-two :first-child,  .footer-section-three :first-child{
+  margin-top: 125px;
+}
+
+.footer-section-four :first-child {
+  margin-top: 115px;
+}
+
 
 .footer-section-four{
   width: 20vw;
-  margin-top: 85px;
+  /* margin-top: 115px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.footer-section-four i{
+.icon-footer i{
     font-size: 28px;
     margin: 10px;
     cursor: pointer;
@@ -198,6 +244,9 @@ a{
 
 
 @media screen and (max-width: 480px) {
+  body{
+    font-size: 15px;
+  }
   .logo-image {
     width: 100px;
     height: 15px;
@@ -207,10 +256,10 @@ a{
   }
 
   .try-button {
-    width: 100px;
+    width: 120px;
     border-radius: 20px;
-    height: 20px;
-    border-color: white;
+    height: 32px;
+    /* border-color: white; */
     background-color: white;
     margin-top: 18px;
     text-align: center;
@@ -226,14 +275,24 @@ a{
     width: 90vw;
   }
   
+  .header-message p {
+    width: 75vw;
+  }
+
+  .start-button {
+    margin-top: 5px;
+  }
   .header-image{
     width: 90vw;
     margin-left: 0px;
   }
 
-  .section-one,
-  .section-two,
-  .section-three{
+  .top-header{
+    margin-bottom: 90px;
+  }
+
+ 
+  .section-two{
     flex-direction: column;
     /* justify-content: center; */
   }
@@ -245,22 +304,31 @@ a{
 
   .card{
     height: 100%;
-    width: 92vw;
+    width: 85vw;
   }
 
   .image-section{
-    width: 92vw;
-    height: 500px;
+    width: 80vw;
+    height: 300px;
     margin-top: 2px;
   }
 
   .text-section {
-    width: 90vw;
+    width: 80vw;
     margin-top: 1px;
     margin-left: 2px;
     margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-align: center;
+    padding-top: 0;
+    margin-top: 0px;
   }
+ 
+.text-section h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
   .before-footer {
     width: 90vw;
@@ -277,15 +345,21 @@ a{
     border-radius: 15px;
   }
   footer{
-    min-height: 100%;
+    min-height: 100vh;
   }
   .before-footer h3{
     text-align: center;
     padding-top: 30px;
   }
 
+  h3{
+    font-size: 1.1rem;
+  }
   .footer-button {
-    margin-top: 20px;
+    margin-top: 1px;
+    width: 250px;
+    font-size: 1rem;
+    height: 50px;
   }
 
   .footer-section{
@@ -299,11 +373,23 @@ a{
     height: 10px;
   }
 
-  .copyright-text{
+
+
+  .footer-section-one, .footer-section-two, .footer-section-three{
+    width: 100vw;
+    padding: none;
+    margin: 2px;
+  }
+
+  .footer-section-four{
+    margin-top: 20px;
+    width: 100vw;
     text-align: center;
   }
 
-  .footer-section-one, .footer-section-two, .footer-section-three, .footer-section-four{
-    width: 100vw;
+  .descr-icon {
+    /* display: flex; */
+    margin-top: 0px;
   }
+  
 }
